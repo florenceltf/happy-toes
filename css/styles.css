@@ -1,11 +1,16 @@
-html {
-  scroll-behavior: smooth;
-}
-
 @font-face {
   font-family: "Modern Era";
   src: url(ModernEra-Medium.otf);
   font-weight: bolder;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background: white;
+  color: #ffac6d;
 }
 
 body {
@@ -143,6 +148,18 @@ section {
   min-height: 100vh;
   margin:0;
   padding: 0;
+  animation-name: gradient;
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
+}
+
+@keyframes gradient {
+  0% {background-color: #ffac6d}
+  25% {background-color: #ffdf76}
+  50% {background-color: rgb(255, 219, 153)}
+  75% {background-color: #ffdf76}
+  100% {background-color: #ffac6d}
 }
 
 #who {
@@ -162,11 +179,22 @@ background: #ffac6d;
 }
 
 #footer {
-  background: rgb(255, 248, 218);
   height: 50px;
   display: flex;
   align-items: center;
   text-align: center;
+  animation-name: footer-gradient;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
+}
+
+@keyframes footer-gradient {
+  0% {background-color: rgb(255, 248, 218);}
+  25% {background-color: #ffdf76}
+  50% {background-color: rgb(255, 248, 218);}
+  75% {background-color: rgb(255, 219, 153)}
+  100% {background-color: rgb(255, 248, 218);}
 }
 
 h3 {

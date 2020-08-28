@@ -162,6 +162,20 @@ section {
   100% {background-color: #ffac6d}
 }
 
+#intro img {
+  margin-top: -50px;
+  -webkit-animation: rotating 10s linear infinite;
+}
+
+@-webkit-keyframes rotating {
+  from{
+      -webkit-transform: rotate(0deg);
+  }
+  to{
+      -webkit-transform: rotate(360deg);
+  }
+}
+
 #who {
   background: rgb(255, 248, 218);
 }
@@ -214,8 +228,10 @@ h3 {
   text-align: center;
 }
 
-#popup img {
-  padding-bottom: 10px;
+.emoji {
+font-size: 30px;
+padding-top: 5px;
+line-height: 30px;
 }
 
 #popup p {
@@ -276,6 +292,16 @@ text-decoration: none;
 font-size: 20px;
 }
 
+#back-to-top a:hover span {
+  display:none;
+}
+
+#back-to-top a:hover:before {
+  content:"Zooom!";
+  display: flex;
+  justify-content: flex-start;
+}
+
 #mobile-header {
   display: none;
 }
@@ -293,6 +319,10 @@ font-size: 20px;
   .logo:hover:before {
     content:"Namaste ! 🙏";
     padding-left: 15px;
+  }
+
+#intro img {
+    width: 70%!important;
   }
   
   header nav {

@@ -63,6 +63,18 @@ header div.socials {
 .logo {
   display: flex;
   align-items: center;
+  text-decoration: none;
+}
+
+.logo:hover span{
+  display:none;
+}
+
+.logo:hover:before {
+  content:"Namaste ! 🙏";
+  color: black;
+  letter-spacing: 0.05rem;
+  text-decoration: none;
 }
 
 header div a,
@@ -81,7 +93,7 @@ nav a:hover span {
   display:none;
 }
 nav a:hover:before {
-  content:"Read ";
+  content:"Read";
 }
 
 p {
@@ -129,6 +141,8 @@ section {
 #intro {
   background:#ffac6d;
   min-height: 100vh;
+  margin:0;
+  padding: 0;
 }
 
 #who {
@@ -144,7 +158,7 @@ section {
 }
 
 #try {
-background: rgb(255, 218, 203);
+background: #ffac6d;
 }
 
 #footer {
@@ -165,8 +179,8 @@ h3 {
 #popup {
   background: #fff;
   position: fixed;
-  bottom: 25px;
-  left: 25px;
+  bottom: 20px;
+  left: 20px;
   width: 250px;
   padding: 20px 20px 20px 20px;
   text-align: center;
@@ -186,6 +200,40 @@ h3 {
 color: black;
 text-decoration: none;
 border-bottom: 2px solid black;
+}
+
+#popup a:hover{
+  color: #ffdf76;
+  border-bottom: 2px solid #ffdf76;
+}
+
+#popup-small{
+  position: fixed;
+  bottom: 14px;
+  left: 15px;
+  display: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+#popup-small:hover span {
+  display:none;
+}
+
+#popup-small:hover:before {
+  content:"Yes, please! Click here.";
+  display: flex;
+  justify-content: flex-start;
+}
+
+#close {
+  cursor: pointer;
+  border-bottom: 2px solid black;
+}
+
+#close:hover {
+  color: #ffdf76;
+  border-bottom: 2px solid #ffdf76;
 }
 
 #back-to-top{

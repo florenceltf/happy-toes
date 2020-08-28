@@ -41,36 +41,37 @@ document.addEventListener("scroll", function () {
   toggleTag();
 });
 
-const addEmoji = function () {
+
+const createEmojiInRandomPosition = function () {
   const emojiTag = document.createElement("div");
   document.body.appendChild(emojiTag);
-  emojiTag.innerHTML = "🧘";
-  emojiTag.classList.add("emoji-tag")
+  emojiTag.innerHTML = "🌻";
+  emojiTag.classList.add("emoji-tag");
 
-  let interval = null;
+  const x = Math.random() * 100;
+  const y = Math.random() * 100;
+  console.log(x, y)
 
-  const startInterval = function () {
-    clearInterval(interval);
-    interval = setInterval(function () {
-      const x = Math.random() * 100;
-      const y = Math.random() * 100;
-      console.log(x, y)
+  emojiTag.style.top = `${x}%`;
+  emojiTag.style.left = `${y}%`;
 
-      emojiTag.style.top = `${x}%`;
-      emojiTag.style.left = `${y}%`;
-    }, 2000);
-  };
+  document.addEventListener("mousemove", function (event) {
+    emojiTag.remove();
+  });
 
-  startInterval();
+  document.addEventListener("scroll", function (event) {
+    emojiTag.remove();
+  });
 
 }
 
-interval = setInterval(function () {
-  addEmoji();
-}, 2000)
+if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+  emojiTag.remove();
+} else {
 
+  interval = setInterval(function () {
+    createEmojiInRandomPosition();
+  }, 3000)
 
+}
 
-  // document.addEventListener("mousemove", function (event) {
-  //   startInterval();
-  // });

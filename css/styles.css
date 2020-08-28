@@ -359,4 +359,7 @@ font-size: 20px;
     display: none;
   }
 
+  #popup-small{
+    display: none;
+  }
 }

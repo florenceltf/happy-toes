@@ -76,7 +76,7 @@ header div.socials {
 }
 
 .logo:hover:before {
-  content:"Namaste ! 🙏";
+  content:"Namaste! 🙏";
   color: black;
   letter-spacing: 0.05rem;
   text-decoration: none;
@@ -228,10 +228,16 @@ h3 {
   text-align: center;
 }
 
-.emoji {
+.emoji
+{
 font-size: 30px;
 padding-top: 5px;
 line-height: 30px;
+}
+
+.emoji-tag {
+  position: fixed;
+  font-size: 30px;
 }
 
 #popup p {

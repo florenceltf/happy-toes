@@ -3,6 +3,7 @@ const progressTag = document.querySelector("div.progress")
 const closeTag = document.getElementById("close")
 const popupTag = document.getElementById("popup")
 const popupSmallTag = document.getElementById("popup-small")
+const scrollTag = document.getElementById("scroll")
 
 document.addEventListener("scroll", function () {
   const pixels = window.pageYOffset
@@ -21,4 +22,8 @@ closeTag.addEventListener("click", function () {
 popupSmallTag.addEventListener("click", function () {
   popupTag.style.display = "block";
   popupSmallTag.style.display = "none";
+})
+
+document.addEventListener("scroll", function () {
+  scrollTag.style.display = "none";
 })

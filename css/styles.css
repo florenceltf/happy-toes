@@ -390,9 +390,12 @@ letter-spacing: 0.05rem;
   header div.socials,
   h3,
   h2,
-  #back-to-top span,
   #scroll {
   font-size: 18px;
+}
+
+#back-to-top span {
+  display: none!important;
 }
 
 .logo img{

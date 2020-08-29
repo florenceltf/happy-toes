@@ -64,3 +64,8 @@ const createEmojiInRandomPosition = function () {
   });
 
 }
+
+interval = setInterval(function () {
+  createEmojiInRandomPosition();
+}, 3000);
+

@@ -300,6 +300,7 @@ border-bottom: 2px solid black;
   position: fixed;
   bottom: 15px;
   right: 15px;
+  display: none;
 }
 
 #back-to-top a{
@@ -392,6 +393,10 @@ letter-spacing: 0.05rem;
   h2,
   #scroll {
   font-size: 18px;
+}
+
+#back-to-top {
+  display:none;
 }
 
 #back-to-top span {

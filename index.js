@@ -55,17 +55,29 @@ const createEmojiInRandomPosition = function () {
   emojiTag.style.top = `${x}%`;
   emojiTag.style.left = `${y}%`;
 
+
   document.addEventListener("mousemove", function (event) {
     emojiTag.remove();
   });
 
   document.addEventListener("scroll", function (event) {
     emojiTag.remove();
+
   });
 
-}
+//   console.log("hi")
+// setTimeout(function(){ alert("Hello"); }, 1000);
 
+  window.setTimeout(function(){ 
+    emojiTag.remove();
+  }, 300000);
+
+}
 interval = setInterval(function () {
   createEmojiInRandomPosition();
 }, 3000);
+
+
+
+
 

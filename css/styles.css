@@ -384,11 +384,14 @@ letter-spacing: 0.05rem;
   }
 
   #popup {
-    display: none;
+    bottom: initial;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
   }
 
   #popup-small{
-    display: none;
+    display: none!important;
   }
 }
 

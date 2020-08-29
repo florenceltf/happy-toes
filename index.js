@@ -64,14 +64,3 @@ const createEmojiInRandomPosition = function () {
   });
 
 }
-
-if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-  emojiTag.remove();
-} else {
-
-  interval = setInterval(function () {
-    createEmojiInRandomPosition();
-  }, 3000)
-
-}
-

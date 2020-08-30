@@ -74,9 +74,15 @@ const createEmojiInRandomPosition = function () {
 
 }
 
-interval = setInterval(function () {
+window.setTimeout(function () {
   createEmojiInRandomPosition();
-}, 5000);
+
+  interval = setInterval(function () {
+    createEmojiInRandomPosition();
+  }, 3000);
+
+}, 6000);
+
 
 
 

@@ -42,43 +42,43 @@ document.addEventListener("scroll", function () {
 });
 
 
-// const createEmojiInRandomPosition = function () {
-//   const emojiTag = document.createElement("div");
-//   document.body.appendChild(emojiTag);
-//   emojiTag.innerHTML = "🌻";
-//   emojiTag.classList.add("emoji-tag");
+const createEmojiInRandomPosition = function () {
+  const emojiTag = document.createElement("div");
+  document.body.appendChild(emojiTag);
+  emojiTag.innerHTML = "🌻";
+  emojiTag.classList.add("emoji-tag");
 
-//   const x = Math.random() * 100;
-//   const y = Math.random() * 100;
-//   console.log(x, y)
+  const x = Math.random() * 100;
+  const y = Math.random() * 100;
+  console.log(x, y)
 
-//   emojiTag.style.top = `${x}%`;
-//   emojiTag.style.left = `${y}%`;
+  emojiTag.style.top = `${x}%`;
+  emojiTag.style.left = `${y}%`;
 
 
-//   document.addEventListener("mousemove", function (event) {
-//     emojiTag.remove();
-//   });
+  document.addEventListener("mousemove", function (event) {
+    emojiTag.remove();
+  });
 
-//   document.addEventListener("scroll", function (event) {
-//     emojiTag.remove();
+  document.addEventListener("scroll", function (event) {
+    emojiTag.remove();
 
-//   });
+  });
 
-//   window.setTimeout(function () {
-//     emojiTag.remove();
-//   }, 300000);
+  window.setTimeout(function () {
+    emojiTag.remove();
+  }, 300000);
 
-// }
+}
 
-// window.setTimeout(function () {
-//   createEmojiInRandomPosition();
+window.setTimeout(function () {
+  createEmojiInRandomPosition();
 
-//   interval = setInterval(function () {
-//     createEmojiInRandomPosition();
-//   }, 3000);
+  interval = setInterval(function () {
+    createEmojiInRandomPosition();
+  }, 3000);
 
-// }, 6000);
+}, 6000);
 
 
 

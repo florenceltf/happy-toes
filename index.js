@@ -65,17 +65,18 @@ const createEmojiInRandomPosition = function () {
 
   });
 
-//   console.log("hi")
-// setTimeout(function(){ alert("Hello"); }, 1000);
+  //   console.log("hi")
+  // setTimeout(function(){ alert("Hello"); }, 1000);
 
-  window.setTimeout(function(){ 
+  window.setTimeout(function () {
     emojiTag.remove();
   }, 300000);
 
 }
+
 interval = setInterval(function () {
   createEmojiInRandomPosition();
-}, 3000);
+}, 5000);
 
 
 

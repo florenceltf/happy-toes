@@ -226,7 +226,17 @@ h3 {
   width: 100%;
   padding: 15px 15px 15px 15px;
   letter-spacing: 0.05rem;
+}
 
+#footer a{
+  color: black;
+  text-decoration: none;
+  border-bottom: 2px solid black;
+}
+
+#footer a:hover {
+  border-bottom: 2px solid #ffac6d;
+  color: #ffac6d;
 }
 
 #popup {

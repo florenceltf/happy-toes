@@ -346,12 +346,16 @@ letter-spacing: 0.05rem;
 
 @media (max-width: 880px){
 
+  .hide {
+    display: none;
+  }
+
   .logo:hover:before {
     content:"Namaste ! 🙏";
     padding-left: 15px;
   }
 
-#intro img {
+  #intro img {
     width: 70%!important;
   }
   
@@ -404,19 +408,19 @@ letter-spacing: 0.05rem;
   h3,
   h2,
   #scroll {
-  font-size: 18px;
-}
+    font-size: 18px;
+  }
 
-#back-to-top {
-  display:none;
-}
+  #back-to-top {
+    display:none;
+  }
 
-#back-to-top span {
-  display: none!important;
-}
+  #back-to-top span {
+    display: none!important;
+  }
 
-.logo img{
-  width: 150px;
-}
+  .logo img{
+    width: 150px;
+  }
 
 }

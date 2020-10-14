@@ -247,7 +247,20 @@ h3 {
   width: 250px;
   padding: 20px 20px 20px 20px;
   text-align: center;
+  display: none;
 }
+
+#popup-trh {
+  background: #fff;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  width: 300px;
+  padding: 20px 20px 20px 20px;
+  text-align: center;
+  z-index: 100;
+}
+
 
 .emoji
 {
@@ -262,19 +275,22 @@ line-height: 30px;
   z-index: 3;
 }
 
-#popup p {
+#popup p,
+#popup-trh p {
   padding: 0;
   font-size: 16px;
   line-height: 22px;
 }
 
-#popup a{
+#popup a,
+#popup-trh a {
 color: black;
 text-decoration: none;
 border-bottom: 2px solid black;
 }
 
-#popup a:hover{
+#popup a:hover,
+#popup-trh a:hover {
   color: #ffdf76;
   border-bottom: 2px solid #ffdf76;
 }
@@ -298,12 +314,14 @@ border-bottom: 2px solid black;
   justify-content: flex-start;
 }
 
-#close {
+#close,
+#close-trh {
   cursor: pointer;
   border-bottom: 2px solid black;
 }
 
-#close:hover {
+#close:hover,
+#close-trh:hover {
   color: #ffdf76;
   border-bottom: 2px solid #ffdf76;
 }

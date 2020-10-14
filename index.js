@@ -5,6 +5,9 @@ const popupTag = document.getElementById("popup")
 const popupSmallTag = document.getElementById("popup-small")
 const scrollTag = document.getElementById("scroll")
 const backToTopTag = document.getElementById("back-to-top");
+const popupPodcastTag = document.getElementById("popup-trh");
+const closePodcastTag = document.getElementById("close-trh");
+
 
 document.addEventListener("scroll", function () {
   const pixels = window.pageYOffset
@@ -13,6 +16,11 @@ document.addEventListener("scroll", function () {
 
   const percentage = pixels / totalScrollableDistance
   progressTag.style.width = `${100 * percentage}%`
+})
+
+closePodcastTag.addEventListener("click", function () {
+  popupPodcastTag.style.display = "none";
+  popupSmallTag.style.display = "block";
 })
 
 closeTag.addEventListener("click", function () {

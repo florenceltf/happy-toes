@@ -2,6 +2,7 @@ const bodyTag = document.querySelector("body")
 const progressTag = document.querySelector("div.progress")
 const closeTag = document.getElementById("close")
 const popupTag = document.getElementById("popup-trh")
+const popupYogaTag = document.getElementById("popup")
 const popupSmallTag = document.getElementById("popup-small")
 const scrollTag = document.getElementById("scroll")
 const backToTopTag = document.getElementById("back-to-top");
@@ -24,7 +25,7 @@ closePodcastTag.addEventListener("click", function () {
 })
 
 closeTag.addEventListener("click", function () {
-  popupTag.style.display = "none";
+  popupYogaTag.style.display = "none";
   popupSmallTag.style.display = "block";
 })
 

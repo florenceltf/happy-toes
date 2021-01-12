@@ -242,12 +242,11 @@ h3 {
 #popup {
   background: #fff;
   position: fixed;
-  bottom: 20px;
-  left: 20px;
-  width: 250px;
-  padding: 20px 20px 20px 20px;
+  top: 40%;
+  left: 41%;
+  width: 350px;
+  padding: 40px 20px 40px 20px;
   text-align: center;
-  display: none;
 }
 
 #popup-trh {

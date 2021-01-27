@@ -115,7 +115,18 @@ p {
   letter-spacing: 0.05rem;
   line-height: 28px;
   padding: 0 50px 50px 50px;
+}
 
+p a {
+  color: black;
+  text-decoration: none;
+  border-bottom: 2px solid black;
+}
+
+p a:hover {
+  color: orange;
+  text-decoration: none;
+  border-bottom: 2px solid orange;
 }
 
 h2 {
